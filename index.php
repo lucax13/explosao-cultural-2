@@ -22,6 +22,7 @@ $listaDeGeneros = $generoServico->listarTodos();
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Explosão Cultural</title>
+  <link rel="shortcut icon" href="images/logotipo2.png" type="image/png" sizes="64x64"> 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/estilo.css">
 </head>
