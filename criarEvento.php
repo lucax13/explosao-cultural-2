@@ -91,11 +91,11 @@ if (isset($_POST['inserir'])) {
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Explosão Cultural</title>
-    <link rel="stylesheet" href="css/estilo.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Explosão Cultural - Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/estilo.css" />
 </head>
 
 <body class="bg-dark text-light">

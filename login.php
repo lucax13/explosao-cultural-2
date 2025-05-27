@@ -63,13 +63,12 @@ if (isset($_POST['entrar'])) {
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Explosão Cultural - Login</title>
-  <link rel="stylesheet" href="css/estilo.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/estilo.css" />
 </head>
 
-<body class="bg-dark text-light">
+<body class="bg-ligth text-dark h-100">
   <header class="bg-black p-3">
-
     <div class="container d-flex justify-content-between align-items-center">
       <h1 class="m-0"><a href="index.php" class="text-light text-decoration-none">Explosão Cultural </a></h1>
       <nav class="navbar navbar-expand-lg navbar-dark">
@@ -80,7 +79,7 @@ if (isset($_POST['entrar'])) {
           <div class="collapse navbar-collapse" id="menuNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-               <li class="nav-item dropdown">
+              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Gêneros
                 </a>
@@ -95,15 +94,16 @@ if (isset($_POST['entrar'])) {
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link" href="cria-conta.php">Cadastro</a></li>
+              <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
             </ul>
-
-            <div class="position-relative ms-3">
+            <div class="position-relative">
               <form autocomplete="off" class="d-flex" action="resultados.php" method="POST" onsubmit="return false" id="form-busca">
-                <input id="campo-busca" name="busca" class="form-control me-2" type="search" placeholder="Pesquise aqui" aria-label="Pesquise aqui" />
+                <input id="campo-busca" name="busca" class="form-control me-2" type="search" placeholder="Pesquise aqui" aria-label="Pesquise aqui">
               </form>
-              <div id="resultados" class="mt-3 position-absolute container bg-white text-dark shadow-lg p-3 rounded"></div>
+              <!-- Div manipulada pelo busca.js -->
+              <div id="resultados" class="mt-3 position-absolute container bg-white shadow-lg p-3 rounded"></div>
             </div>
-
+            </ul>
           </div>
         </div>
       </nav>
@@ -141,7 +141,7 @@ if (isset($_POST['entrar'])) {
     </div>
   </main>
 
-  <footer class="bg-black text-center py-3">
+  <footer class="bg-ligth text-center py-3">
     <p class="m-0">Explosão Cultural — Empresa fictícia criada por Maycon e Lucas &copy;</p>
   </footer>
 

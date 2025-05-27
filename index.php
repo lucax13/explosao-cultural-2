@@ -25,7 +25,6 @@ $listaDeGeneros = $generoServico->listarTodos();
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/estilo.css">
 </head>
-
 <body class="bg-ligth text-dark">
   <header class="bg-black p-3">
     <div class="container d-flex justify-content-between align-items-center">
@@ -70,7 +69,7 @@ $listaDeGeneros = $generoServico->listarTodos();
   </header>
 
   <section class="container py-5">
-    <h2 class="text-white mb-4">Eventos em Destaquemoiu</h2>
+    <h2 class="text-dark mb-4">Eventos em Destaque</h2>
 
     <div id="carouselEventos" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
