@@ -17,7 +17,6 @@ $listaDeGeneros = $generoServico->listarTodos();
 ?>
 <!doctype html>
 <html lang="pt-br">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,7 +25,6 @@ $listaDeGeneros = $generoServico->listarTodos();
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/estilo.css">
 </head>
-
 <body class="bg-ligth text-dark">
   <header class="bg-ligth p-3">
     <div class="container d-flex justify-content-between align-items-center">
