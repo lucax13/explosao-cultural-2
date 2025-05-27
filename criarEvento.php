@@ -99,7 +99,7 @@ if (isset($_POST['inserir'])) {
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 
-<body class="bg-dark text-light">
+<body class="bg-ligth text-dark">
     <header class="bg-ligth p-3">
     <div class="container d-flex justify-content-between align-items-center">
       <h1 class="m-0"><a href="index.php" class="text-light text-decoration-none"><img class="logotipo" src="images/logo2.png" alt="logo tipo"></a></h1>
@@ -154,7 +154,7 @@ if (isset($_POST['inserir'])) {
     <hr>
   </header>
 
-    <main class="container my-5  bg-dark text-light rounded p-4 shadow">
+    <main class="container my-5  bg-ligth text-dark rounded p-4 shadow">
         <h2 class="mb-4 text-center">Inserir Evento</h2>
 
         <form autocomplete="off" action="" method="post" id="form-endereco" enctype="multipart/form-data">
@@ -253,16 +253,12 @@ if (isset($_POST['inserir'])) {
 
     </main>
 
-    <footer class="bg-black text-center py-3 mt-5">
-        <p class="m-0 text-light">Explosão Cultural — Empresa fictícia criada por Maycon e Lucas &copy;</p>
+    <footer class="bg-ligth text-center py-3 mt-5">
+        <p class="m-0 text-dark">Explosão Cultural — Empresa fictícia criada por Maycon e Lucas &copy;</p>
     </footer>
-
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
-
-
-
     <script src="js/endereco.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/buscar.js"></script>
