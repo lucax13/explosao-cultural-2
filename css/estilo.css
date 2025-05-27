@@ -100,3 +100,8 @@ body.modal-open {
 #resultados{
   z-index: 1000;
 }
+
+.logotipo{
+  width: 125px;
+  height: 125px;
+}

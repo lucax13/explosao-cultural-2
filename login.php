@@ -67,20 +67,24 @@ if (isset($_POST['entrar'])) {
   <link rel="stylesheet" href="css/estilo.css" />
 </head>
 
-<body class="bg-ligth text-dark h-100">
-  <header class="bg-black p-3">
+<body class="bg-ligth text-dark">
+  <header class="bg-ligth p-3">
     <div class="container d-flex justify-content-between align-items-center">
-      <h1 class="m-0"><a href="index.php" class="text-light text-decoration-none">Explosão Cultural </a></h1>
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <h1 class="m-0"><a href="index.php" class="text-light text-decoration-none"><img class="logotipo" src="images/logo2.png" alt="logo tipo"></a></h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
           <button class="navbar-toggler" type="button" id="menuBtn" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="menuNav">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="index.php">Home</a>
+              </li>
+
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Gêneros
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -93,21 +97,29 @@ if (isset($_POST['entrar'])) {
                   <?php } ?>
                 </ul>
               </li>
-              <li class="nav-item"><a class="nav-link" href="cria-conta.php">Cadastro</a></li>
-              <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+
+              <li class="nav-item">
+                <a class="nav-link text-black" href="cria-conta.php">Cadastro</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-black" href="login.php">Login</a>
+              </li>
             </ul>
+
             <div class="position-relative">
               <form autocomplete="off" class="d-flex" action="resultados.php" method="POST" onsubmit="return false" id="form-busca">
                 <input id="campo-busca" name="busca" class="form-control me-2" type="search" placeholder="Pesquise aqui" aria-label="Pesquise aqui">
               </form>
+
               <!-- Div manipulada pelo busca.js -->
               <div id="resultados" class="mt-3 position-absolute container bg-white shadow-lg p-3 rounded"></div>
             </div>
-            </ul>
           </div>
         </div>
       </nav>
     </div>
+    <hr>
   </header>
 
   <main class="container my-5 h-100">
