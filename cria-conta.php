@@ -48,15 +48,8 @@ if (isset($_POST['inserir'])){
     }
 
 }   
-
-
-
-
-
-
-
-
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br" class="h-100">
 
@@ -64,9 +57,10 @@ if (isset($_POST['inserir'])){
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Explosão Cultural</title>
-  <link rel="stylesheet" href="css/estilo.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 
 <body class="bg-dark text-light h-100">
   <header class="bg-black p-3">
@@ -104,7 +98,6 @@ if (isset($_POST['inserir'])){
   <div class="container my-5 h-100">
     <h2 class="mb-4">Login</h2>
     <p class="text-warning">Atenção: os campos <strong>Nome</strong> e <strong>E-mail</strong> são <u>obrigatórios</u>.</p>
-    <p class="text-warning"> <strong><a class="text-warning" href="login-adm.php">Login</a></strong> </p>
 
     <form autocomplete="off" action="" method="post" id="my-form">
       <fieldset class="border p-4 rounded">

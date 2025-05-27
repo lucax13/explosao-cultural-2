@@ -80,7 +80,20 @@ if (isset($_POST['entrar'])) {
           <div class="collapse navbar-collapse" id="menuNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="generos.php">Gêneros</a></li>
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Gêneros
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <?php foreach ($listaDeGeneros as $generos) { ?>
+                    <li>
+                      <a class="dropdown-item" href="generos.php?tipo=<?= $generos['id'] ?>">
+                        <?= $generos['tipo'] ?>
+                      </a>
+                    </li>
+                  <?php } ?>
+                </ul>
+              </li>
               <li class="nav-item"><a class="nav-link" href="cria-conta.php">Cadastro</a></li>
             </ul>
 
