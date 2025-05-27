@@ -32,12 +32,12 @@ $listaDeGeneros = $generoServico->listarTodos();
       <h1 class="m-0"><a href="index.php" class="text-light text-decoration-none"><img class="logotipo" src="images/logo2.png" alt="logo tipo"></a></h1>
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
-          <button class="navbar-toggler" type="button" id="menuBtn" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="menuNav">
-            <ul class="navbar-nav ms-auto">
+          <div class="collapse navbar-collapse justify-content-center" id="menuNav">
+            <ul class="navbar-nav mx-auto">
               <li class="nav-item">
                 <a class="nav-link text-black" href="index.php">Home</a>
               </li>
@@ -49,8 +49,8 @@ $listaDeGeneros = $generoServico->listarTodos();
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <?php foreach ($listaDeGeneros as $generos) { ?>
                     <li>
-                      <a class="dropdown-item" href="generos.php?tipo=<?= $generos['id'] ?>">
-                        <?= $generos['tipo'] ?>
+                      <a class="dropdown-item" href="generos.php?tipo=<?= htmlspecialchars($generos['id']) ?>">
+                        <?= htmlspecialchars($generos['tipo']) ?>
                       </a>
                     </li>
                   <?php } ?>
@@ -66,17 +66,16 @@ $listaDeGeneros = $generoServico->listarTodos();
               </li>
             </ul>
 
-            <div class="position-relative">
-              <form autocomplete="off" class="d-flex" action="resultados.php" method="POST" onsubmit="return false" id="form-busca">
+            <div class="position-relative ms-lg-3">
+              <form autocomplete="off" class="d-flex" action="resultados.php" method="POST" id="form-busca">
                 <input id="campo-busca" name="busca" class="form-control me-2" type="search" placeholder="Pesquise aqui" aria-label="Pesquise aqui">
               </form>
-
-              <!-- Div manipulada pelo busca.js -->
-              <div id="resultados" class="mt-3 position-absolute container bg-white shadow-lg p-3 rounded"></div>
+              <div id="resultados" role="region" aria-live="polite" class="mt-3 position-absolute container bg-white shadow-lg p-3 rounded"></div>
             </div>
           </div>
         </div>
       </nav>
+
     </div>
     <hr>
   </header>
