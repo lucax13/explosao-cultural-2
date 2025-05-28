@@ -77,7 +77,7 @@
 
                 <a class="btn btn-dark bg-gradient btn-lg" href="index.php">
                     <i class="bi bi-newspaper"></i> <br>
-                    Eventos
+                    Sair
                 </a>
 
 
