@@ -62,39 +62,48 @@
         <hr>
     </header>
 
-    <article class="p-5 my-4 rounded-3 bg-white shadow">
-        <div class="container-fluid py-1">
 
-            <h2 class="display-4">Olá [NOME_DO_USUÁRIO]!</h2>
-            <hr class="my-4">
+<div class="row">
+    <article class="col-12 bg-white rounded shadow my-1 py-4">
 
-            <div class="d-grid gap-2 d-md-block text-center">
-                <a class="btn btn-dark bg-gradient btn-lg" href="criarEvento.php">
-                    <i class="bi bi-person"></i> <br>
-                    Criar
-                </a>
+        <h2 class="text-center">
+            Atualizar meus dados
+        </h2>
 
-                <a class="btn btn-dark bg-gradient btn-lg" href="index.php">
-                    <i class="bi bi-newspaper"></i> <br>
-                    Eventos
-                </a>
-
-        
-                <a class="btn btn-dark bg-gradient btn-lg" href="meuperfil.php">
-                    <i class="bi bi-people"></i> <br>
-                    Usuários
-                </a>
-            </div>
+        <div class="alert alert-danger text-center" role="alert">
+            [MENSAGEM_DE_ERRO]
         </div>
+
+        <form class="mx-auto w-75" action="" method="post" id="form-atualizar" name="form-atualizar">
+            <input type="hidden" name="id" value="[ID_USUARIO]">
+
+            <div class="mb-3">
+                <label class="form-label" for="nome">Nome:</label>
+                <input value="[NOME_USUARIO]" class="form-control" type="text" id="nome" name="nome">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="email">E-mail:</label>
+                <input value="[EMAIL_USUARIO]" class="form-control" type="email" id="email" name="email">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="senha">Senha:</label>
+                <input class="form-control" type="password" id="senha" name="senha" placeholder="Preencha apenas se for alterar">
+            </div>
+
+            <button class="btn btn-primary" name="atualizar">
+                <i class="bi bi-arrow-clockwise"></i> Atualizar
+            </button>
+        </form>
+
     </article>
+</div>
 
-
-    <footer class="bg-ligth text-center py-3">
+<footer class="bg-ligth text-center py-3">
         <p class="m-0">Explosão Cultural — Empresa fictícia crianda por Maycon e Lucas &copy; </p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script src="js/menu.js"></script>
     <script src="js/buscar.js"></script>
 </body>
-
-</html>
