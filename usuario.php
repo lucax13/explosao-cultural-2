@@ -62,8 +62,9 @@
         <hr>
     </header>
 
-    <article class="p-5 my-4 rounded-3 bg-white shadow">
-        <div class="container-fluid py-1">
+
+    <article class="container my-5 bg-ligth text-dark rounded p-4 shadow">
+        <div class="container my-5 h-100">
 
             <h2 class="display-4">Olá [NOME_DO_USUÁRIO]!</h2>
             <hr class="my-4">
@@ -79,15 +80,14 @@
                     Eventos
                 </a>
 
-        
+
                 <a class="btn btn-dark bg-gradient btn-lg" href="meuperfil.php">
                     <i class="bi bi-people"></i> <br>
-                    Usuários
+                    Meu perfil
                 </a>
             </div>
         </div>
     </article>
-
 
     <footer class="bg-ligth text-center py-3">
         <p class="m-0">Explosão Cultural — Empresa fictícia crianda por Maycon e Lucas &copy; </p>

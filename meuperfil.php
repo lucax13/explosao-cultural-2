@@ -63,44 +63,44 @@
     </header>
 
 
-<div class="row">
-    <article class="col-12 bg-white rounded shadow my-1 py-4">
+    <div class="row">
+        <article class="col-12 bg-white rounded shadow my-1 py-4">
 
-        <h2 class="text-center">
-            Atualizar meus dados
-        </h2>
+            <h2 class="text-center">
+                Atualizar meus dados
+            </h2>
 
-        <div class="alert alert-danger text-center" role="alert">
-            [MENSAGEM_DE_ERRO]
-        </div>
-
-        <form class="mx-auto w-75" action="" method="post" id="form-atualizar" name="form-atualizar">
-            <input type="hidden" name="id" value="[ID_USUARIO]">
-
-            <div class="mb-3">
-                <label class="form-label" for="nome">Nome:</label>
-                <input value="[NOME_USUARIO]" class="form-control" type="text" id="nome" name="nome">
+            <div class="alert alert-danger text-center" role="alert">
+                [MENSAGEM_DE_ERRO]
             </div>
 
-            <div class="mb-3">
-                <label class="form-label" for="email">E-mail:</label>
-                <input value="[EMAIL_USUARIO]" class="form-control" type="email" id="email" name="email">
-            </div>
+            <form class="mx-auto w-75" action="" method="post" id="form-atualizar" name="form-atualizar">
+                <input type="hidden" name="id" value="[ID_USUARIO]">
 
-            <div class="mb-3">
-                <label class="form-label" for="senha">Senha:</label>
-                <input class="form-control" type="password" id="senha" name="senha" placeholder="Preencha apenas se for alterar">
-            </div>
+                <div class="mb-3">
+                    <label class="form-label" for="nome">Nome:</label>
+                    <input value="[NOME_USUARIO]" class="form-control" type="text" id="nome" name="nome">
+                </div>
 
-            <button class="btn btn-primary" name="atualizar">
-                <i class="bi bi-arrow-clockwise"></i> Atualizar
-            </button>
-        </form>
+                <div class="mb-3">
+                    <label class="form-label" for="email">E-mail:</label>
+                    <input value="[EMAIL_USUARIO]" class="form-control" type="email" id="email" name="email">
+                </div>
 
-    </article>
-</div>
+                <div class="mb-3">
+                    <label class="form-label" for="senha">Senha:</label>
+                    <input class="form-control" type="password" id="senha" name="senha" placeholder="Preencha apenas se for alterar">
+                </div>
 
-<footer class="bg-ligth text-center py-3">
+                <button class="btn btn-primary" name="atualizar">
+                    <i class="bi bi-arrow-clockwise"></i> Atualizar
+                </button>
+            </form>
+
+        </article>
+    </div>
+
+    <footer class="bg-ligth text-center py-3">
         <p class="m-0">Explosão Cultural — Empresa fictícia crianda por Maycon e Lucas &copy; </p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
